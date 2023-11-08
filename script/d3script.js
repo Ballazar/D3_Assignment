@@ -16,7 +16,7 @@
 
     const pathGenerator = d3.geoPath().projection(projection)
 // loading the JSON data and passing it through the path to create the map
-        d3.json("Geojson/uk.json").then(data => 
+        d3.json("https://github.com/Ballazar/D3_Assignment/blob/main/Geojson/uk.json").then(data => 
         {
             svg.selectAll("path")
             .data(data.features)
